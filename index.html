@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senin için sevgilim...</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f7f7f7;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            transition: transform .3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        .letter-container {
+            max-width: 800px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .letter-container::before {
+            content: "";
+            position: absolute;
+            top: -120px;
+            left: -120px;
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 180, 180, 0.25);
+            border-radius: 50%;
+            filter: blur(40px);
+        }
+
+        .letter-container h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-top: 0;
+            color: #d6336c;
+        }
+
+        .letter {
+            font-size: 19px;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 16px;
+            color: #777;
+        }
+
+        /* Sürpriz açılış efekti */
+        #surprise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffdde1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            font-size: 32px;
+            color: #d6336c;
+            font-weight: bold;
+            transition: opacity 1.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<div id="surprise">❤️ Sürpriz Başlıyor... ❤️</div>
+
+<script>
+    setTimeout(() => {
+        document.getElementById("surprise").style.opacity = "0";
+        setTimeout(() => {
+            document.getElementById("surprise").style.display = "none";
+        }, 1500);
+    }, 1800);
+</script>
+
+<header>
+    <h1>Sevgililer Günü Sürprizi</h1>
+    <p>Senin için hazırladım sevgilim ❤️</p>
+</header>
+
+<section class="gallery">
+    <img src="https://downloader.disk.yandex.com.tr/preview/fa11565d6b0087cc19be0a7952c41f082e9dcb07a8c1d05db59505f087355948/6988a705/7WEIxahFDsTeTvQNF2wMsA-vxBc2LOOuYq0FJUXWYxfKpX_KEUkvUPU731B_owf4E6M7z3_ssq6l7aYqUizY0w%3D%3D?uid=0&filename=IMG_3658.heic&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v3&size=XXXL&crop=0">
+
+    <img src="https://downloader.disk.yandex.com.tr/preview/f9c01687166e0ccf81a1835a264623796ecb6024f3c7ed46a6fd9c7f17e9efdb/6988a732/FSK8SsXKC6az2YxxnEjXRNDIAsMYUrNjMEVRc2gjv-k9HMXL8bz3E_dtFLXLKSywZhPAsd8V1fLaFtSyiv_l7g%3D%3D?uid=0&filename=eba7e8f0-c315-452b-8dec-10d37a3023b6.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v3&size=XXXL&crop=0">
+
+    <img src="https://downloader.disk.yandex.com.tr/preview/6bebcdc627ebfe1732fd4d7ae68ed8c9150840ec0536ce893f010aa1803f25f7/6988a74b/v_T-yDYpNVogtDtiQ3IEa9ptkTmfNixDbz-dPZ4wbsiXWhbmWZTAmto1mXbtelcDYwDtV7AvdWdh0ayiRsAenw%3D%3D?uid=0&filename=IMG_3610.heic&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v3&size=XXXL&crop=0">
+
+    <img src="https://downloader.disk.yandex.com.tr/preview/6ec119a2a608bbdfe0b1097bfcedf9d3fc399e6348d864a59791649508ff3057/6988a75f/roy83nHk0L1s-pOk6m06LtptkTmfNixDbz-dPZ4wbshhI2xf12NfLAi_6KNxIeODq6d4Z4QtC4UhKHFbi4ak7A%3D%3D?uid=0&filename=IMG_4297.heic&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v3&size=XXXL&crop=0">
+
+    <img src="https://downloader.disk.yandex.com.tr/preview/5a4bd7a2bfde31b0dc8664fd1ef69c8f63b68432fdc9135eb55fb5882bc960b8/6988a776/eoSeA-GqmYGCadg7jWrPRdGDkgcn9oG2WckK_iD81FdBM2-HqqHEY8dl5uWmfm1d4l65gC2EQV0Yl15Ndkk52A%3D%3D?uid=0&filename=IMG_4293.heic&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v3&size=XXXL&crop=0">
+</section>
+
+<div class="letter-container">
+    <h2>Senin İçin...</h2>
+    <div class="letter">
+Hayatıma girdiğin günden beri içimde tarif edemediğim ama çok tanıdık bir huzur var. Bazen sadece sesini duymak bile yetiyor, bazen bir mesajın günümü güzelleştiriyor. Sen farkında olmasan da, en küçük detayların bile bende büyük anlamlar taşıyor. Gülüşün, bakışın, konuşma tarzın… Hepsi kalbimde kendine ait bir yer açtı.
+
+Seni sevmek bana hiç ağır gelmedi. Aksine, sanki kalbim seni hep bekliyormuş gibi… Yanındayken zamanın nasıl geçtiğini anlamıyorum; yanımda olmadığında bile varlığını hissediyorum. Güldüğünde mutlu oluyorum, üzülürsen içim sıkılıyor. Çünkü seni gerçekten seviyorum; alışkanlıkla değil, ezberle değil, kalpten.
+
+Sevgililer Günü belki herkes için sadece bir gün, ama benim sana olan sevgimi kelimelere dökmek için güzel bir bahane. Çünkü seni sadece bugün değil, her gün seviyorum. İyi ki varsın, iyi ki hayatıma dokundun, iyi ki benimlesin. Gelecekte ne olursa olsun, şu an kalbimde olduğun yer benim için çok özel.
+
+Sevgililer Günümüz kutlu olsun sevgilim… Seni çok seviyorum. Hem bugün, hem yarın, hem de her gün 🖤🤍🖤
+    </div>
+</div>
+
+<footer>
+    © 2026 — Senin için hazırlandı ❤️
+</footer>
+
+</body>
+</html>
